@@ -5,20 +5,20 @@
 class GitSecrets < Formula
   desc ""
   homepage "https://github.com/benammann/homebrew-tap"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benammann/git-secrets/releases/download/v0.2.0/git-secrets_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "939fa2dc968e596bfd8404075c3afe88b528507fa9871f2a9e192e7c229665d3"
+      url "https://github.com/benammann/git-secrets/releases/download/v0.2.1/git-secrets_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "d9d81e1f65ad217dfba020d4ccdb700cb1cdf735ed426afca032fb6debede518"
 
       def install
         bin.install "git-secrets"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benammann/git-secrets/releases/download/v0.2.0/git-secrets_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "74956c76a6126cb6b6fd9ac802bd91e96ad67e90c44c72b6efa00d4ef8b009cb"
+      url "https://github.com/benammann/git-secrets/releases/download/v0.2.1/git-secrets_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "0dfbf91f59fb1fc7257e2b617679c6b622b39eb431ba6d7b231f2d0d9048719b"
 
       def install
         bin.install "git-secrets"
@@ -28,16 +28,16 @@ class GitSecrets < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benammann/git-secrets/releases/download/v0.2.0/git-secrets_0.2.0_Linux_arm64.tar.gz"
-      sha256 "07944dc4bbf81b58c30c181fdddc9336fc9ea432b2f202ef2163aa6cfbfd080a"
+      url "https://github.com/benammann/git-secrets/releases/download/v0.2.1/git-secrets_0.2.1_Linux_arm64.tar.gz"
+      sha256 "6bdedbd0091d3c1f9d08b9b811d5f254ea35453846ac3df7fc72bae1f4f4f3e4"
 
       def install
         bin.install "git-secrets"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/benammann/git-secrets/releases/download/v0.2.0/git-secrets_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "4b9b90f87d81d406f577f2ba44cda1f4ebcb066a93bc8dfc37698730a29d24f6"
+      url "https://github.com/benammann/git-secrets/releases/download/v0.2.1/git-secrets_0.2.1_Linux_x86_64.tar.gz"
+      sha256 "1ed09ef74b45d940e22193d2992bd0d344145b029af848a1a59434da6d556dc4"
 
       def install
         bin.install "git-secrets"
